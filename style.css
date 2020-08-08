@@ -5,6 +5,22 @@ body {
     font-size: 16px;
 }
 
+#desktop-warn {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: #FCF9EC;
+    font-size: 2em;
+    font-weight: 600;
+
+}
+
 #wrapper {
     position: relative;
     width: 100%;
@@ -71,4 +87,11 @@ body {
     margin-bottom: 0;
     border-radius: 10px;
     font-size: 1.3em;
+}
+
+/* Media queries */
+@media screen and (max-width: 991px) and (min-width: 100px) {
+    #desktop-warn {
+        display: none;
+    }
 }
